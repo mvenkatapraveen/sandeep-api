@@ -40,7 +40,7 @@ app.get('/token/sign', (req, res) => {
         "password": "business123"
     }
     let token = jwt.sign(userData, secret, { expiresIn: '600s'})
-    res.status(200).json({"token": token});
+    res.status(300).json({"token": token});
 });
 
 
